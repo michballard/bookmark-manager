@@ -16,9 +16,15 @@ post '/users' do
 	end
 end
 
-# get '/users/reset_password/:token'
-# 	user = User.first(:email => email)
-# 	user.password_token = (1..64).map{('A'..'Z').to_a.sample}.join
-# 	user.password_token_timestamp = Time.now
-# 	user.save
-# end
+get '/users/reset_password' do 
+	erb :"users/reset_password"
+end
+
+post '/users/password_reset_request' do 
+	user = User.first(:email => params[:email])
+	user.password_token = (1..64).map{('A'..'Z').to_a.sample}.join
+	user.password_token_timestamp = Time.now
+	user.save
+	# Send email 
+	redirect to 'sessions/new'
+end
