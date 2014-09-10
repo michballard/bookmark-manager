@@ -11,7 +11,7 @@ helpers do
 		:from => "postmaster@app29425854.mailgun.org", 
 		:to => user_email, 
 		:subject => "Recovery password", 
-		:text => "Please click following link to recover your password: http://morning-badlands-8105.herokuapp.com/users/reset_password/#{password_token}"
+		:text => "Please click following link to recover your password: http://morning-badlands-8105.herokuapp.com/users/password_reset_confirmation/#{password_token}"
 	end
 
 end

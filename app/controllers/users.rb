@@ -26,16 +26,17 @@ post '/users/password_reset_request' do
 	user.password_token_timestamp = Time.now
 	user.save
 	send_token_email(params[:email], user.password_token)
+	flash[:notice] = "Please check your email to complete password reset"
 	redirect to 'sessions/new'
 end
 
-get '/users/password_reset_confirmation' do 
+get '/users/password_reset_confirmation/:token' do 
 	erb :"users/password_reset_confirmation"
 end
 
 post '/users/password_reset_confirmation' do 
-	# user = User.first(:password_token => token)
-	# Include 
-
+	user = User.first(:password_token => params[:token])
+	user.password=(params[:password])
+	flash[:notice] = "Your password has been reset, please sign in"
 	redirect to 'sessions/new'
 end
