@@ -25,7 +25,7 @@ post '/users/password_reset_request' do
 	user.password_token = (1..64).map{('A'..'Z').to_a.sample}.join
 	user.password_token_timestamp = Time.now
 	user.save
-	send_token_email(user_email, user.password_token)
+	send_token_email(params[:email], user.password_token)
 	redirect to 'sessions/new'
 end
 

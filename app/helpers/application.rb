@@ -14,14 +14,4 @@ helpers do
 		:text => "Please click following link to recover your password: http://morning-badlands-8105.herokuapp.com/users/reset_password/#{password_token}"
 	end
 
-# def send_simple_message
-#   RestClient.post "https://api:key-89dd848a009a60085d893cd7969927c5"\
-#   "@api.mailgun.net/v2/sandbox4801168f0ad04a3f971855626dc873ba.mailgun.org/messages",
-#   :from => "mihai@makersacedemy.com",
-#   :to => "cmihailiviu@gmail.com",
-#   :subject => "Hello",
-#   :text => "Check out this link:"
-# end
-
-
 end

@@ -6,6 +6,7 @@ gem 'bcrypt-ruby'
 gem 'rack-flash3'
 gem 'rake'
 gem 'sinatra-partial'
+gem 'mailgun'
 
 group :development, :test do
 	gem 'capybara'

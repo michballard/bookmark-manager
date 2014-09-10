@@ -2,6 +2,7 @@ require 'sinatra'
 require 'data_mapper'
 require 'rack-flash'
 require 'sinatra/partial'
+require 'mailgun'
 
 require './app/models/link'
 require './app/models/tag'
