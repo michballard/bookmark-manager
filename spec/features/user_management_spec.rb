@@ -65,14 +65,3 @@ feature 'User signs out' do
 	end
 
 end
-
-feature 'User requests password' do 
-
-	scenario 'before signing in' do 
-
-		click_button "Forgotten password"
-		expect(page).to have_content("")
-
-	end
-
-end
