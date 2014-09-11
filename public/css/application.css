@@ -4,6 +4,11 @@ body {
 	background-image: url(/images/extra_clean_paper.png);
 }
 
+a#logo {
+	color: white;
+	text-decoration: none;
+}
+
 a.button {
 	display: inline-block;
 	width: 80px;
@@ -17,6 +22,10 @@ a.button {
 	margin-left: 5px;
 	margin-right: 5px;
 	text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+}
+
+a.button.highlighted {
+  background-color: #b77843;
 }
 
 header {
