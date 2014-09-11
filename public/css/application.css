@@ -2,11 +2,17 @@ body {
 	margin: 0;
 	font-family: Helvetica, Arial, Sans-serif;
 	background-image: url(/images/extra_clean_paper.png);
+  color: #333; 
 }
 
 a#logo {
 	color: white;
 	text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #b77843;
 }
 
 a.button {
@@ -15,7 +21,6 @@ a.button {
 	background-color: green;
 	border: 2px solid white;
 	color: white;
-	text-decoration: none;
 	padding: 5px 10px;
 	text-align: center;
 	border-radius: 4px;
@@ -48,4 +53,41 @@ header #user-links {
 	flex: 1;
 	-webkit-flex: 1;
 	text-align: right;
+}
+
+header a {
+  color: white;
+}
+
+#links-container {
+	background-color: white;
+  margin: 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+.link {
+  background-color: #EEE;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  margin: 10px inherit;
+  padding: 15px 10px;
+}
+
+.link a.title {
+  letter-spacing: 1px;
+}
+
+.link .description {
+  margin: 10px inherit;
+}
+
+.link .source {
+  float: right;
+  font-size: 12px;
 }
