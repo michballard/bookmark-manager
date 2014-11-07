@@ -6,7 +6,7 @@ Bookmark Manager
 
 Bookmark manager was created to learn about relational databases and object relational mapping.  It allows a user to create a bookmark link and add a comment.  Users can sign up and sign into the bookmark manager website.  
 
-<strong>Screenshot view:</strong>
+<strong>Screenshot view</strong>
 ![Screenshot](/images/screenshot.png)
 
 ## How to view this app
