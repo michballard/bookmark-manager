@@ -1,6 +1,8 @@
 | [Makers Academy](http://www.makersacademy.com) | Week 5 |
 | ------ | ------ |
 
+<a href="https://codeclimate.com/repos/5460ebd2e30ba0289401764f/feed"><img src="https://codeclimate.com/repos/5460ebd2e30ba0289401764f/badges/dc0b03f52600227b74db/gpa.svg" /></a>
+
 Bookmark Manager
 ================
 
